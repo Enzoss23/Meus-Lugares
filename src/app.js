@@ -1,5 +1,5 @@
-import { Home } from "./pages/home.js";
+import { Login } from "./pages/login.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  Home();
+ Login(); // Renderiza a tela de login inicialmente
 });

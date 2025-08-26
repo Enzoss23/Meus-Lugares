@@ -8,7 +8,8 @@
 
 /* Corpo da página */
 body {
-  background-color: #f0f2f5;
+  background-color: #f0f2f5 ;
+  /* c*/
   padding: 20px;
 }
 
@@ -33,6 +34,20 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* Padroniza o tamanho dos campos e da seleção */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; /* Ajustar para 100% */
+  max-width: 300px; /* Definir uma largura máxima */
+  height: 35px; /* Altura consistente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
 /* Select filtro */
@@ -106,6 +121,7 @@ select {
 }
 
 .modal-content input[type="text"],
+.modal-content input[type="number"],
 .modal-content input[type="checkbox"] {
   margin-bottom: 10px;
   padding: 6px;
@@ -123,4 +139,92 @@ select {
 
 .modal-content button {
   margin-top: 5px;
+}
+/* Formulário de Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loginForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+input[type="password"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  #listaLugares {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .place-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0;
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  select {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card {
+    padding: 12px;
+  }
+  
+  .place-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .place-card p {
+    font-size: 13px;
+  }
+  
+  .modal-content {
+    padding: 15px;
+  }
 }
