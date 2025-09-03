@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Enzoss23/Meus-Lugares/issues"
   },
-  "homepage": "https://github.com/Enzoss23/Meus-Lugares#readme"
+  "homepage": "https://github.com/Enzoss23/Meus-Lugares#readme",
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
 }
